@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SecondScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:navigationIcon="@drawable/btn_up"
+            app:menu="@menu/menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/display_image"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/jumanji"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tool_Bar" />
+
+
+        <ImageView
+            android:id="@+id/promo_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/star_promo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/display_image" />
+
+        <TextView
+            android:id="@+id/txt_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/apply_promo_code"
+            android:textColor="#000"
+            app:layout_constraintStart_toEndOf="@id/promo_star"
+            app:layout_constraintTop_toBottomOf="@id/display_image" />
+
+
+        <TextView
+            android:id="@+id/txt_apply_tw0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/for_offer"
+            android:textColor="#000"
+            app:layout_constraintStart_toEndOf="@id/promo_star"
+            app:layout_constraintTop_toBottomOf="@id/txt_apply" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:rotation="180"
+            android:src="@drawable/up_red"
+            app:layout_constraintStart_toEndOf="@id/txt_apply_tw0"
+            app:layout_constraintTop_toBottomOf="@id/txt_apply" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/display_image">
+
+
+            <EditText
+                android:id="@+id/btn_watch_trailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/button_play"
+                android:drawablePadding="10dp"
+                android:text="@string/watch_trailer"
+                android:textColor="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_aqua_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/aquaman"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/promo_star" />
+
+        <TextView
+            android:id="@+id/txt_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/u_a"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/txt_aqua_man"
+            app:layout_constraintTop_toBottomOf="@id/promo_star" />
+
+
+        <TextView
+            android:id="@+id/txt2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/_2018_action_adventure_2hr22m"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_aqua_man" />
+
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/half_human_half_atlantean_arthur_is_born_with_ability_to_communicate_with_marine_creatures_he_goes_on_a_quest_to_retreive_the_legendary_tidant_of_atlan_and_protect_the_water_world"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt2018" />
+
+
+        <TextView
+            android:id="@+id/txt_read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="read more"
+            android:textColor="#F44336"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_description" />
+
+
+        <TextView
+            android:id="@+id/txt_eng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/english"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_read_more" />
+
+
+
+        <TextView
+            android:id="@+id/txt_One"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/fr"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_eng" />
+
+        <TextView
+            android:id="@+id/txt_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/gr"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/txt_One"
+            app:layout_constraintTop_toBottomOf="@id/txt_eng" />
+
+
+        <TextView
+            android:id="@+id/txt_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/en"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/txt_apply_tw0"
+            app:layout_constraintTop_toBottomOf="@id/txt_eng" />
+
+
+        <ImageView
+            android:id="@+id/yellow_button"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/imdblogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_three" />
+        <TextView
+            android:id="@+id/txt_chose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_7_10"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/yellow_button"
+            app:layout_constraintTop_toBottomOf="@id/txt_three" />
+
+
+        <TextView
+            android:id="@+id/txt_cast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/cast"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/yellow_button" />
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/second_screen_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_cast" />
+
+
+        <Button
+            android:id="@+id/btn_book"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_book_ticket"
+            android:backgroundTint="@color/orange"
+            android:text="@string/book_tickets"
+            android:textColor="#ffff"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/second_screen_recycler_view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

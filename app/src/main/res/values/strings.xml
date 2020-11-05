@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Edys_Movie_Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="watch_trailer">watch trailer</string>
+    <string name="for_offer">for offer</string>
+    <string name="apply_promo_code">Apply promo code</string>
+    <string name="aquaman">Aquaman</string>
+    <string name="u_a">U/A</string>
+    <string name="_2018_action_adventure_2hr22m">2018 | Action/Adventure | 2hr22m</string>
+    <string name="half_human_half_atlantean_arthur_is_born_with_ability_to_communicate_with_marine_creatures_he_goes_on_a_quest_to_retreive_the_legendary_tidant_of_atlan_and_protect_the_water_world">Half-human half-Atlantean Arthur is born with ability to communicate with marine creatures he goes on a quest to retreive the legendary tidant of atlan and protect the water world</string>
+    <string name="english">English</string>
+    <string name="fr">Fr</string>
+    <string name="en">En</string>
+    <string name="_7_10">-7/10</string>
+    <string name="cast">Cast</string>
+    <string name="book_tickets">Book Tickets</string>
+    <string name="gr">Gr</string>
+    <string name="spider_man">Spider Man</string>
+    <string name="new_release">New release</string>
+    <string name="coming_soon">Coming soon</string>
+
+</resources>
